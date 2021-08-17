@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/share"
+        android:title="Поделится"
+        android:onClick=""
+        android:icon="@drawable/share" />
+    <item android:id="@+id/star"
+        android:title="Оценить приложение"
+        android:icon="@drawable/star"/>
+    <item android:id="@+id/write"
+        android:title="Написать разработчику"
+        android:icon="@drawable/write"/>
+    <item android:id="@+id/apps"
+        android:title="Все приложения"
+        android:icon="@drawable/play"/>
+</menu>

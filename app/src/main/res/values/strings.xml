@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Memory</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="some_id">
+
+00:30
+</string>
+    <string name="some_id1">01</string>
+    <string name="some_id2">02</string>
+    <string name="some_id3">03</string>
+    <string name="some_id4">04</string>
+    <string name="some_id5">05</string>
+    <string name="ad_text">Рабочая (или оперативная) память представляет собой способность, с помощью которой мы сохраняем в уме элементы, необходимые нам для выполнения задачи. Бладаря рабочей или оперативной памяти мы можем: объединять два или более действия, происходящие примерно в одно и то же время, например, вспоминать и отвечать на вопросы, которые нам задали во время разговора. Соотносить новые знания с полученными ранее. Это позволяет нам обучаться. Сохранять в уме информацию, в то время как наше внимание сосредоточено на других вещах, например, мы можем готовить обед, разговаривая по телефону</string>
+    <string name="some_id11">Воробей</string>
+    <string name="some_id22">Лиса</string>
+    <string name="some_id33">Волк</string>
+    <string name="some_id44">Заяц</string>
+    <string name="some_id55">Медведь</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/some_id">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/line_10"
+            android:layout_width="23dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="37.98dp"
+            android:layout_marginTop="12.98dp"
+            android:background="@drawable/clear"
+            android:backgroundTint="#000000" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="280dp"
+            android:layout_height="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rectangle_1" />
+
+        <TextView
+            android:id="@+id/tv_life"
+            android:layout_width="23dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/favorite"
+
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="#FBFBFB"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal|top"
+        android:rotationX="6"
+        android:text="@string/some_id"
+        android:textAppearance="@style/some_id"
+        android:textSize="30sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="357dp" />
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/dalee"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:textSize="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/nav_btn"
+        android:text="Далее"
+        app:backgroundTint="@null"/>
+
+
+    <!-- drawable/rectangle_8.xml -->
+
+
+
+</LinearLayout>
