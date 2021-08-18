@@ -23,7 +23,7 @@ public class NavigationDrawer extends AppCompatActivity {
     DrawerLayout          drawerLayout;
     ActionBarDrawerToggle toggle;
     Toolbar               toolbar;
-    NavigationView        navigationView;
+    public NavigationView        navigationView;
     Button nav_btn;
 
     @Override

@@ -14,6 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -22,12 +23,24 @@ public class LevelPage extends Fragment {
     ArrayList<LevelModel> levelsList;
     View view;
     Button questionBtn;
-    TextView levels;
-    ImageView level_1;
+    RecyclerView recyclerView;
+    RecyclerView.LayoutManager linearLayoutManager;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
         view = inflater.inflate ( R.layout.levels_activity, container, false);
+        levelsList = new ArrayList<> ();
+        recyclerView = view.findViewById(R.id.recyclerView);
+        // создаем адаптер
+        LevelAdapter adapter = new LevelAdapter(getActivity (), levelsList);
+        // устанавливаем для списка адаптер
+        recyclerView.setAdapter(adapter);
+        linearLayoutManager = new LinearLayoutManager ( getActivity());
+        recyclerView.setLayoutManager (linearLayoutManager);
+        recyclerView.setHasFixedSize (true);
+
+
 
         questionBtn = view.findViewById (R.id.questionBtn);
         questionBtn.setOnClickListener ( new View.OnClickListener () {
@@ -39,13 +52,6 @@ public class LevelPage extends Fragment {
         } );
 
 
-        levels = view.findViewById (R.id.levels);
-
-        RecyclerView recyclerView = (RecyclerView)view.findViewById(R.id.recyclerView);
-        // создаем адаптер
-        LevelAdapter adapter = new LevelAdapter(getActivity (), levelsList);
-        // устанавливаем для списка адаптер
-        recyclerView.setAdapter(adapter);
 
         recyclerView.addOnItemTouchListener(
                 new RecyclerItemClickListener(getActivity(),recyclerView,
