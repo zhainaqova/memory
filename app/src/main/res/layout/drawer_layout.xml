@@ -16,15 +16,18 @@
         android:layout_height="match_parent" />
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/white"
+        app:backgroundTint="@null"
+        android:background="@drawable/background_lay"
         app:headerLayout="@layout/nav_header"
-        app:itemBackground="@drawable/menu_item_padding"
-        app:itemIconTint="#6A6363"
+        app:itemIconTint="#2FCB22"
         app:itemTextAppearance="@style/TextViewStyle"
-        app:itemTextColor="#6A6363"
+        app:itemTextColor="#fff"
+        app:itemHorizontalPadding="40dp"
+        android:paddingVertical="70dp"
+        app:itemIconSize="18dp"
         app:menu="@menu/drawer_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
