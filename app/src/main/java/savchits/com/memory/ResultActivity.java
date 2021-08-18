@@ -19,7 +19,6 @@ public class ResultActivity extends AppCompatActivity {
     int                   value=5;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

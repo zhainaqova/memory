@@ -8,6 +8,7 @@
     android:background="#ffff"
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
+    tools:context=".NavigationDrawer"
     android:id="@+id/drawer">
     <include
         layout="@layout/app_bar_main"
@@ -15,19 +16,15 @@
         android:layout_height="match_parent" />
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:backgroundTint="@null"
-        android:background="@drawable/drawerlayout"
+        android:background="@color/white"
         app:headerLayout="@layout/nav_header"
         app:itemBackground="@drawable/menu_item_padding"
-        app:itemIconTint="#2FCB22"
+        app:itemIconTint="#6A6363"
         app:itemTextAppearance="@style/TextViewStyle"
         app:itemTextColor="#6A6363"
-        app:itemHorizontalPadding="40dp"
-        android:paddingVertical="70dp"
-        app:itemIconSize="18dp"
         app:menu="@menu/drawer_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
