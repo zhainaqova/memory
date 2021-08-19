@@ -89,7 +89,7 @@ public class ResultActivity extends AppCompatActivity {
         binding.tomain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), LevelPage.class));
             }
         });
         binding.againGameF.setOnClickListener(new View.OnClickListener() {

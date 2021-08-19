@@ -20,7 +20,7 @@
     <style name="AppTheme.popUpOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="TextViewStyle" parent="android:Widget.TextView">
         <item name="android:fontFamily">@font/mont</item>
-        <item name="android:textSize">17dp</item>
+        <item name="android:textSize">14dp</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textColor">#ffffff</item>
         <item name="android:textStyle">bold</item>
