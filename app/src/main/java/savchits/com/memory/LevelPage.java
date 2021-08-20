@@ -110,9 +110,9 @@ public class LevelPage extends Fragment {
     private void setInitialData(){
 
         levelsList.add(new LevelModel ("Уровень 1",  R.drawable.level_1));
-        levelsList.add(new LevelModel ("Уровень 2",  R.drawable.level_1));
-        levelsList.add(new LevelModel ("Уровень 3",  R.drawable.level_1));
-        levelsList.add(new LevelModel ("Уровень 4",  R.drawable.level_1));
+        levelsList.add(new LevelModel ("Уровень 2",  R.drawable.level_2));
+        levelsList.add(new LevelModel ("Уровень 3",  R.drawable.level_3));
+        levelsList.add(new LevelModel ("Уровень 4",  R.drawable.level_4));
     }
 }
 
